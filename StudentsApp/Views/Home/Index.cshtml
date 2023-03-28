@@ -1,0 +1,71 @@
+﻿
+<div class="row">
+    <div class="col-md-2">
+       <label>Name</label>
+    </div>
+    <div class="col-md-10">
+        <input type="hidden" id="hfID" value="0"/>
+        <input type="text" id="txtName" class="form-control"/>
+    </div>
+   
+</div>
+<div class="row">
+    <div class="col-md-2">
+        <label>Email</label>
+    </div>
+    <div class="col-md-10">
+        <input type="email" id="txtEmail" class="form-control" />
+    </div>
+   
+</div>
+<div class="row">
+    <div class="col-md-2">
+        <label>Phone</label>
+    </div>
+    <div class="col-md-10">
+        <input type="tel" id="txtPhone" class="form-control" />
+    </div>
+   
+</div>
+<div class="row">
+    <div class="col-md-2">
+        <label>Zip Code</label>
+    </div>
+    <div class="col-md-10">
+        <input type="number" id="txtZipCode" class="form-control" />
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-2">
+        <label>Hobbies</label>
+    </div>
+   
+</div>
+<div class="row">
+    <div class="col-md-12" >
+       <ul id="checkboxList">
+           
+       </ul>
+    </div>
+
+</div>
+<button class="btn btn-primary" onclick="addStudent()">Add</button>
+<button class="btn btn-primary" onclick="updateStudent()">Update</button>
+
+<table class="table table-bordered table-responsive table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Zip Code</th>
+            <th>Hobbies</th>
+            <th>Edit</th>
+        </tr>
+    </thead>
+    <tbody id="tblStudents">
+
+    </tbody>
+</table>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/Students.js"></script>
